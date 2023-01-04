@@ -2,6 +2,103 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 4.0.0 (2023-01-04)
+
+
+### Bug Fixes
+
+* **@Component:** fix injection error when original controller has no dependencies ([5b5b6a9](https://github.com/vsternbach/angular-ts-decorators/commit/5b5b6a9))
+* **@NgModule:** add backward compatibility for deprecated NgModuleDecorated ([97f7fd5](https://github.com/vsternbach/angular-ts-decorators/commit/97f7fd5))
+* **bootstrap:** fix bootstraping on body tag when no jQuery present ([2d45dbc](https://github.com/vsternbach/angular-ts-decorators/commit/2d45dbc))
+* **bootstrap:** fix bug when compilerOptions are not provided ([3920e0b](https://github.com/vsternbach/angular-ts-decorators/commit/3920e0b))
+* **build:** add minified build ([10db0e0](https://github.com/vsternbach/angular-ts-decorators/commit/10db0e0))
+* **build:** add package-lock and upgrade to typescript 2.4.1 ([fd7b43e](https://github.com/vsternbach/angular-ts-decorators/commit/fd7b43e))
+* **build:** fix build script ([f48d2ad](https://github.com/vsternbach/angular-ts-decorators/commit/f48d2ad))
+* **build:** fix interfaces export issue ([bdf6cfe](https://github.com/vsternbach/angular-ts-decorators/commit/bdf6cfe))
+* **build:** rename package-lock to npm-shrinkwrap ([853a8d6](https://github.com/vsternbach/angular-ts-decorators/commit/853a8d6))
+* **build:** update rollup config according to new format ([c78f180](https://github.com/vsternbach/angular-ts-decorators/commit/c78f180))
+* **component:** add support for automatic injection ([3e53658](https://github.com/vsternbach/angular-ts-decorators/commit/3e53658)), closes [#29](https://github.com/vsternbach/angular-ts-decorators/issues/29)
+* **component:** update children binding in $onChanges ([3e81205](https://github.com/vsternbach/angular-ts-decorators/commit/3e81205)), closes [#62](https://github.com/vsternbach/angular-ts-decorators/issues/62)
+* **Component:** replace array.from with destructuring ([72bca2b](https://github.com/vsternbach/angular-ts-decorators/commit/72bca2b))
+* **deploy:** change string substitution to POSIX format ([0eea0d9](https://github.com/vsternbach/angular-ts-decorators/commit/0eea0d9))
+* **deps:** downgrade reflect-metadata because of broken sourcemap ([a7fe07d](https://github.com/vsternbach/angular-ts-decorators/commit/a7fe07d))
+* **directive:** add support for controller and angular hooks ([2eef743](https://github.com/vsternbach/angular-ts-decorators/commit/2eef743)), closes [#31](https://github.com/vsternbach/angular-ts-decorators/issues/31) [#32](https://github.com/vsternbach/angular-ts-decorators/issues/32)
+* **HostListener:** fix deregistering host listeners ([e8e4a14](https://github.com/vsternbach/angular-ts-decorators/commit/e8e4a14)), closes [#52](https://github.com/vsternbach/angular-ts-decorators/issues/52)
+* **inject:** change logic to re-assignment instead of splice ([a6519f0](https://github.com/vsternbach/angular-ts-decorators/commit/a6519f0)), closes [#64](https://github.com/vsternbach/angular-ts-decorators/issues/64)
+* **Inject:** add support for class methods ([14a6dcb](https://github.com/vsternbach/angular-ts-decorators/commit/14a6dcb)), closes [#65](https://github.com/vsternbach/angular-ts-decorators/issues/65)
+* **Input:** fix test after making input optional ([70df825](https://github.com/vsternbach/angular-ts-decorators/commit/70df825))
+* **ngHooks:** leave ngHooks so inherited components could call them ([03732dc](https://github.com/vsternbach/angular-ts-decorators/commit/03732dc)), closes [#70](https://github.com/vsternbach/angular-ts-decorators/issues/70)
+* **NgModule:** change warnings ([a23b78e](https://github.com/vsternbach/angular-ts-decorators/commit/a23b78e))
+* **NgModule:** make declarations optional ([6c510d1](https://github.com/vsternbach/angular-ts-decorators/commit/6c510d1))
+* **NgModule:** Support for TypeScript 2.4, which requires a weak  ([293e783](https://github.com/vsternbach/angular-ts-decorators/commit/293e783))
+* **package:** update tslib to version 1.10.0 ([c512659](https://github.com/vsternbach/angular-ts-decorators/commit/c512659))
+* **Pipe:** fixed $inject bug ([1a84056](https://github.com/vsternbach/angular-ts-decorators/commit/1a84056))
+* **providers:** Support deps for useFactory provider registration ([f51eea9](https://github.com/vsternbach/angular-ts-decorators/commit/f51eea9)), closes [#46](https://github.com/vsternbach/angular-ts-decorators/issues/46)
+* **types:** fix exports in utils.d.ts ([871a747](https://github.com/vsternbach/angular-ts-decorators/commit/871a747)), closes [#61](https://github.com/vsternbach/angular-ts-decorators/issues/61)
+* **utils:** fix export util functions ([073eff9](https://github.com/vsternbach/angular-ts-decorators/commit/073eff9))
+* **view child:** refactor to use type as selector ([73e3056](https://github.com/vsternbach/angular-ts-decorators/commit/73e3056))
+* **ViewChild:** add support for querying ViewChild by element id ([4c92d69](https://github.com/vsternbach/angular-ts-decorators/commit/4c92d69)), closes [#66](https://github.com/vsternbach/angular-ts-decorators/issues/66)
+* **ViewChild:** finish ViewChild implementation and bugfixes ([ea40c33](https://github.com/vsternbach/angular-ts-decorators/commit/ea40c33))
+* **ViewChild:** remove unnecessary dependency on DebugData ([40cccfb](https://github.com/vsternbach/angular-ts-decorators/commit/40cccfb))
+* add Type and Provider from angular source code ([2174cec](https://github.com/vsternbach/angular-ts-decorators/commit/2174cec))
+* handle use case of service registration without explicit name ([667e921](https://github.com/vsternbach/angular-ts-decorators/commit/667e921)), closes [#39](https://github.com/vsternbach/angular-ts-decorators/issues/39)
+* update test suite after removing implicit annotations ([0046928](https://github.com/vsternbach/angular-ts-decorators/commit/0046928))
+
+
+### Build System
+
+* change build config ([d061ee0](https://github.com/vsternbach/angular-ts-decorators/commit/d061ee0))
+* move to package-lock and update badges in readme ([3c99ba4](https://github.com/vsternbach/angular-ts-decorators/commit/3c99ba4))
+* update @types/angular ([5288c5b](https://github.com/vsternbach/angular-ts-decorators/commit/5288c5b))
+* update karma ([30d50ab](https://github.com/vsternbach/angular-ts-decorators/commit/30d50ab))
+
+
+### Features
+
+* **@Component:** add @HostListener ([26f5094](https://github.com/vsternbach/angular-ts-decorators/commit/26f5094)), closes [#13](https://github.com/vsternbach/angular-ts-decorators/issues/13)
+* **@Component:** add angular 2+ style lifecycle hooks support ([b2fd1bf](https://github.com/vsternbach/angular-ts-decorators/commit/b2fd1bf))
+* **bootstrap:** add bootstrap abstraction as in angular 2 ([84356ca](https://github.com/vsternbach/angular-ts-decorators/commit/84356ca))
+* **bootstrap:** refactor bootstrap logic ([ecc5ac9](https://github.com/vsternbach/angular-ts-decorators/commit/ecc5ac9))
+* **directive:** add @HostListener support ([b34250f](https://github.com/vsternbach/angular-ts-decorators/commit/b34250f))
+* **helpers:** export util functions as helpers ([60c6be8](https://github.com/vsternbach/angular-ts-decorators/commit/60c6be8))
+* **Inject:** add support for Inject decorator ([167dce0](https://github.com/vsternbach/angular-ts-decorators/commit/167dce0)), closes [#57](https://github.com/vsternbach/angular-ts-decorators/issues/57)
+* **Input:** make input optional by default ([12cacb2](https://github.com/vsternbach/angular-ts-decorators/commit/12cacb2)), closes [#60](https://github.com/vsternbach/angular-ts-decorators/issues/60)
+* **lifecycle_hooks:** Support generic SimpleChange<T> for use in ngOnChanges ([c730215](https://github.com/vsternbach/angular-ts-decorators/commit/c730215)), closes [angular/angular#17560](https://github.com/vsternbach/angular-ts-decorators/issues/17560) [#46](https://github.com/vsternbach/angular-ts-decorators/issues/46)
+* **query:** add ViewChild and ViewChildren ([d2b0975](https://github.com/vsternbach/angular-ts-decorators/commit/d2b0975))
+* **utils:** add some utils functions to public api ([1220117](https://github.com/vsternbach/angular-ts-decorators/commit/1220117))
+* **ViewParent:** add ViewParent property decorator ([69a1214](https://github.com/vsternbach/angular-ts-decorators/commit/69a1214))
+* add missing exports for Type, Provider and ModuleConfig ([addadc2](https://github.com/vsternbach/angular-ts-decorators/commit/addadc2))
+* add utility function to get Type name ([390bc80](https://github.com/vsternbach/angular-ts-decorators/commit/390bc80))
+* add ViewChild and ViewChildren decorators ([53a7ddd](https://github.com/vsternbach/angular-ts-decorators/commit/53a7ddd))
+* Remove support for implicit annotations ([19f8ad9](https://github.com/vsternbach/angular-ts-decorators/commit/19f8ad9))
+* Remove support for link, compile and $provider ([f92351d](https://github.com/vsternbach/angular-ts-decorators/commit/f92351d))
+
+
+### Tests
+
+* **Pipe:** add test case for filter registration ([cd02ba7](https://github.com/vsternbach/angular-ts-decorators/commit/cd02ba7))
+
+
+### BREAKING CHANGES
+
+* Implicit annotations were error prone and didn't work
+correctly with uglified code, so this feature is removed completely now
+and it's user's responsibility to take care of angular annotations,
+either by explicitly providing them or by using tools like ng-annotate.
+
+feat: Add support for bootstrap elements in NgModule
+
+fix: use explicit imports fro angular definitions instead of namespaced
+
+build: update typescript
+* remove support for directive's link and compile, so you
+if you want to migrate directives with link or compile, you need to
+register them the old angularjs way.
+* remove support for classes registered as $providers, so
+if you have custom providers you need to register them the old way.
+
+
+
 ### [3.7.8](https://github.com/vsternbach/angular-ts-decorators/compare/v3.7.7...v3.7.8) (2019-05-21)
 
 
