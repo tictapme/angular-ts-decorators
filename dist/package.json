@@ -25,7 +25,7 @@
     "anguarjs decorators",
     "anguarjs-decorators"
   ],
-  "main": "dist/angular-ts-decorators.umd.js",
+  "main": "angular-ts-decorators.umd.js",
   "module": "angular-ts-decorators.js",
   "jsnext:main": "angular-ts-decorators.js",
   "types": "types/index.d.ts",

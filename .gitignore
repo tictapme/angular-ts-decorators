@@ -3,5 +3,4 @@ coverage/
 *.log
 lib/
 build/
-dist/
 .idea/
