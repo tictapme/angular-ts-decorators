@@ -42,6 +42,9 @@ export function registerProviders(module: IModule, providers: Provider[]) {
       else if (provider.useValue) {
         module.constant(name, provider.useValue);
       }
+      else if (provider.useExisting) {
+        module.provider(name, provider.useExisting);
+      }
     }
     // providers registered as classes
     else {

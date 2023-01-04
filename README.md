@@ -164,7 +164,7 @@ export class GreetingService {
 }
 ```
 
-Services, factories and constants can be registered using Angular 2 syntax by providing an array of provider objects. The provider object has a ```provide``` property (string token), and a ```useClass```, ```useFactory```, or ```useValue``` property to use as the provided value.
+Services, factories and constants can be registered using Angular 2 syntax by providing an array of provider objects. The provider object has a ```provide``` property (string token), and a ```useClass```, ```useFactory```, ```useValue```, or ```useExisting``` property to use as the provided value.
 
 This is how angular filter looks like using angular 2 style @Pipe decorator:
 ```js
