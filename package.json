@@ -28,7 +28,7 @@
   "main": "dist/angular-ts-decorators.umd.js",
   "module": "angular-ts-decorators.js",
   "jsnext:main": "angular-ts-decorators.js",
-  "types": "types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "dependencies": {
     "reflect-metadata": "0.1.13",
     "tslib": "1.10.0"
