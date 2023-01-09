@@ -25,10 +25,10 @@
     "anguarjs decorators",
     "anguarjs-decorators"
   ],
-  "main": "dist/angular-ts-decorators.js",
+  "main": "angular-ts-decorators.umd.js",
   "module": "angular-ts-decorators.js",
   "jsnext:main": "angular-ts-decorators.js",
-  "types": "dist/types/index.d.ts",
+  "types": "types/index.d.ts",
   "dependencies": {
     "reflect-metadata": "0.1.13",
     "tslib": "1.10.0"
@@ -58,6 +58,9 @@
     "angular": ">=1.5.0",
     "typescript": ">=2.2.0"
   },
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "clean": "rimraf dist coverage",
     "test": "karma start --single-run",
