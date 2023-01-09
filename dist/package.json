@@ -1,6 +1,6 @@
 {
   "name": "angular-ts-decorators",
-  "version": "3.7.8",
+  "version": "4.0.2",
   "license": "MIT",
   "author": {
     "name": "Vlad Sternbach",
@@ -25,10 +25,10 @@
     "anguarjs decorators",
     "anguarjs-decorators"
   ],
-  "main": "angular-ts-decorators.umd.js",
+  "main": "dist/angular-ts-decorators.js",
   "module": "angular-ts-decorators.js",
   "jsnext:main": "angular-ts-decorators.js",
-  "types": "types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "dependencies": {
     "reflect-metadata": "0.1.13",
     "tslib": "1.10.0"
