@@ -25,10 +25,10 @@
     "anguarjs decorators",
     "anguarjs-decorators"
   ],
-  "main": "angular-ts-decorators.umd.js",
-  "module": "angular-ts-decorators.js",
+  "main": "dist/angular-ts-decorators.umd.js",
+  "module": "dist/angular-ts-decorators.js",
   "jsnext:main": "angular-ts-decorators.js",
-  "types": "types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "dependencies": {
     "reflect-metadata": "0.1.13",
     "tslib": "1.10.0"
@@ -68,10 +68,10 @@
   "scripts": {
     "clean": "rimraf dist coverage",
     "test": "karma start --single-run",
+    "prepare": "npm run build",
     "test:dev": "karma start",
     "posttest": "cat ./coverage/lcov.info | coveralls",
-    "build": "npm run clean && tsc && rollup -c && npm run uglify && copyfiles package.json README.md CHANGELOG.md LICENSE dist/ && npm run dist_package_json && rimraf dist/temp",
-    "dist_package_json": "cat  package.json | json -e 'delete this.files' > dist/package.json",
+    "build": "npm run clean && tsc && rollup -c && npm run uglify && copyfiles package.json README.md CHANGELOG.md LICENSE dist/ && rimraf dist/temp",
     "uglify": "for f in dist/*.js; do ./node_modules/uglify-es/bin/uglifyjs $f --compress drop_console --mangle --output ${f%.js}.min.js; done",
     "release": "standard-version",
     "postrelease": "git push origin master --follow-tags"
