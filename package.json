@@ -68,7 +68,6 @@
   "scripts": {
     "clean": "rimraf dist coverage",
     "test": "karma start --single-run",
-    "prepare": "npm run build",
     "test:dev": "karma start",
     "posttest": "cat ./coverage/lcov.info | coveralls",
     "build": "npm run clean && tsc && rollup -c && npm run uglify && copyfiles package.json README.md CHANGELOG.md LICENSE dist/ && rimraf dist/temp",
