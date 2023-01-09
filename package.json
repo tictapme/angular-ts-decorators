@@ -5,13 +5,13 @@
   "author": {
     "name": "Vlad Sternbach",
     "email": "vlad.sternbach@gmail.com",
-    "url": "https://github.com/vsternbach"
+    "url": "https://github.com/tictapme"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vsternbach/angular-ts-decorators.git"
+    "url": "git+https://github.com/tictapme/angular-ts-decorators.git"
   },
-  "homepage": "https://github.com/vsternbach/angular-ts-decorators",
+  "homepage": "https://github.com/tictapme/angular-ts-decorators",
   "keywords": [
     "angular decorators",
     "angular-decorators",
