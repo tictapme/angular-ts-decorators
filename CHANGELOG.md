@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.9](https://github.com/tictapme/angular-ts-decorators/compare/v4.0.8...v4.0.9) (2023-01-09)
+
+
+
 ### [4.0.8](https://github.com/tictapme/angular-ts-decorators/compare/v4.0.7...v4.0.8) (2023-01-09)
 
 
